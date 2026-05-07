@@ -167,6 +167,73 @@ main {
   gap: 1.25rem;
 }
 
+.table-card {
+  padding: 1rem;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.commitments-table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.commitments-table th,
+.commitments-table td {
+  padding: 1rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  text-align: left;
+  font-size: 0.98rem;
+}
+
+.commitments-table thead th {
+  background: #f3eadf;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.commitments-table tbody th[scope="row"] {
+  background: #f8f1e6;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  width: 180px;
+}
+
+.commitments-table tr:last-child th,
+.commitments-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.commitments-table th:last-child,
+.commitments-table td:last-child {
+  border-right: 0;
+}
+
+.bullet-list,
+.action-list {
+  margin-left: 1.1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.bullet-list li,
+.action-list li {
+  line-height: 1.6;
+}
+
 .content-card {
   background: var(--card);
   border: 1px solid var(--border);
