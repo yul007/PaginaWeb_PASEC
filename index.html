@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Academic Portfolio for university course">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
   <title>Academic Portfolio</title>
@@ -13,14 +15,14 @@
   <header id="main-header">
     <div class="container">
       <h1>Academic Portfolio</h1>
-      <p>Student Name | Major | Spring 2026</p>
+      <p>University class portfolio | Student reflection and course artifacts</p>
     </div>
   </header>
 
   <nav id="navbar" class="sticky">
     <ul>
       <li><button class="tab-link active" data-tab="home">Home</button></li>
-      <li><button class="tab-link" data-tab="class-product">Class Product & Reflection</button></li>
+      <li><button class="tab-link" data-tab="class-product">Class Product and Reflection</button></li>
       <li><button class="tab-link" data-tab="responsible-citizenship">Responsible Citizenship</button></li>
       <li><button class="tab-link" data-tab="core-values">Three Core Values</button></li>
       <li><button class="tab-link" data-tab="personal-commitments">Two Personal Commitments</button></li>
@@ -30,19 +32,44 @@
 
   <main>
     <section id="home" class="tab-content active">
-      <div class="hero">
-        <img src="assets/images/banner.jpg" alt="Hero Banner">
+      <div class="hero hero-panel">
+        <p class="eyebrow">Welcome</p>
+        <h2>Academic Portfolio</h2>
+        <p>This portfolio represents my academic growth, service activities, and reflective learning through the PASEC course.</p>
       </div>
-      <h2>Welcome</h2>
-      <p>This portfolio represents my academic growth, service activities, and reflective learning through the PASEC course.</p>
     </section>
 
     <section id="class-product" class="tab-content">
-      <h2>Class Product & Reflection</h2>
-      <div class="content-card">
-        <input type="file" id="upload-product">
-        <label for="reflection">Write your 300-350 word reflection:</label>
-        <textarea id="reflection" rows="6" placeholder="Write your reflection here..."></textarea>
+      <div class="section-heading">
+        <p class="eyebrow">Tab 1</p>
+        <h2>Class Product and Reflection</h2>
+        <p class="section-intro">The PDF below captures the class product, followed by a personal reflection on what this learning meant to me.</p>
+      </div>
+
+      <div class="two-column-layout">
+        <article class="content-card document-card">
+          <div class="card-header">
+            <h3>Class product PDF</h3>
+            <p>Embedded for easy review by the professor.</p>
+          </div>
+          <div class="pdf-frame">
+            <iframe src="assets/Class participation journal-2.pdf" title="Class participation journal PDF"></iframe>
+          </div>
+          <a class="download-link" href="assets/Class participation journal-2.pdf" download>Download PDF</a>
+        </article>
+
+        <article class="content-card reflection-card">
+          <div class="card-header">
+            <h3>Reflection</h3>
+            <p>Written response based on the class discussion and its connection to my work.</p>
+          </div>
+          <div class="reflection-text">
+            <p>Before this class, I honestly thought sexuality was a simple topic — something that didn't really need that much analysis. I knew the basic terms, but I had never actually stopped to think about how many layers are involved or how much of what I believed was just something society had taught me without me questioning it.</p>
+            <p>What I learned is that sexuality is not one thing. It has different dimensions — gender expression, identity, orientation, and the body itself — and none of these automatically determine the others. The idea that stuck with me the most was that gender is largely a social construct. Not because it isn't real to the people who experience it, but because the rules around it (what is "for girls," what is "for boys," how you are supposed to look or act) are things society invented and keeps reinforcing. That was genuinely surprising to me.</p>
+            <p>This learning was meaningful to me both personally and professionally. On a personal level, it made me look back at assumptions I didn't even know I had. I realized I had been judging things as "normal" or "strange" based on standards I never chose to believe — I just absorbed them. That kind of realization is uncomfortable, but it is also important.</p>
+            <p>On a professional level, this changed how I see my role at Escuela Aurelio Chiriboga. I work with kids, and kids are at an age where they are still figuring out who they are. I now notice when students make hurtful comments toward classmates who don't fit the typical gender norms — things that before I might have dismissed as "kids being kids." Now I understand those moments are not small. They are the exact stereotypes and preconceptions we mapped in class, showing up in real life. Knowing what is actually behind those dynamics makes me feel more responsible to respond to them, not ignore them. That shift — from just supervising kids to actually understanding what they are going through — is what I think a good educator needs.</p>
+          </div>
+        </article>
       </div>
     </section>
 
