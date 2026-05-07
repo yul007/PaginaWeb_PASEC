@@ -33,7 +33,7 @@ body {
 header {
   padding: 3rem 1rem 2rem;
   text-align: center;
-  background: linear-gradient(180deg, #aadab4 0%, #ffbb47 100%);
+  background: linear-gradient(180deg, #222c24 0%, #372810 100%);
   border-bottom: 1px solid var(--border);
 }
 
