@@ -7,7 +7,7 @@
   --ink: #1d2230;
   --muted: #586175;
   --surface: #fcfbf7;
-  --card: #9e9b9b;
+  --card: #bdb8b8;
   --panel: #f7e4c1;
   --border: rgba(29, 34, 48, 0.12);
   --shadow: 0 14px 34px rgba(29, 34, 48, 0.08);
@@ -33,7 +33,7 @@ body {
 header {
   padding: 3rem 1rem 2rem;
   text-align: center;
-  background: linear-gradient(180deg, #f1cfcf 0%, #f9e3c2 100%);
+  background: linear-gradient(135deg, #5aa36a 0%, #ff6347 100%);
   border-bottom: 1px solid var(--border);
 }
 
@@ -49,12 +49,13 @@ h1, h2, h3, nav button {
 header h1 {
   font-size: clamp(2.2rem, 5vw, 4rem);
   letter-spacing: -0.04em;
+  color: #fff;
 }
 
 header p {
   margin-top: 0.65rem;
   font-size: 1rem;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 nav {
@@ -185,7 +186,8 @@ main {
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid var(--border);
-  height: (min(70vh, 500px));
+  min-height: 400px;
+  height: clamp(520px, 68vh, 920px);
   background: #e9e4db;
 }
 
