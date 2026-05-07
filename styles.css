@@ -7,8 +7,8 @@
   --ink: #1d2230;
   --muted: #586175;
   --surface: #fcfbf7;
-  --card: #ffffff;
-  --panel: #f4eee3;
+  --card: #d7d7d7;
+  --panel: #f7e4c1;
   --border: rgba(29, 34, 48, 0.12);
   --shadow: 0 14px 34px rgba(29, 34, 48, 0.08);
 }
@@ -33,7 +33,7 @@ body {
 header {
   padding: 3rem 1rem 2rem;
   text-align: center;
-  background: linear-gradient(180deg, #ffffff 0%, #faf4eb 100%);
+  background: linear-gradient(180deg, #f1cfcf 0%, #f9e3c2 100%);
   border-bottom: 1px solid var(--border);
 }
 
@@ -61,7 +61,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 250, 243, 0.98);
+  background: rgba(214, 251, 249, 0.98);
   border-bottom: 1px solid var(--border);
 }
 
@@ -185,7 +185,7 @@ main {
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid var(--border);
-  height: clamp(720px, 78vh, 980px);
+  height: 800px;
   background: #e9e4db;
 }
 
