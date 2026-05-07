@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic Portfolio for university course">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Academic Portfolio</title>
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <h1>Academic Portfolio</h1>
+      <p>Student Name | Major | Spring 2026</p>
+    </div>
+  </header>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#class-product">Class Product & Reflection</a></li>
+      <li><a href="#responsible-citizenship">Responsible Citizenship</a></li>
+      <li><a href="#core-values">Three Core Values</a></li>
+      <li><a href="#personal-commitments">Two Personal Commitments</a></li>
+      <li><a href="#video-letter">Video Letter</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="hero">
+        <img src="assets/images/banner.jpg" alt="Hero Banner">
+      </div>
+      <h2>Welcome</h2>
+      <p>This portfolio represents my academic growth, service activities, and reflective learning through the PASEC course.</p>
+    </section>
+
+    <!-- Class Product & Reflection -->
+    <section id="class-product" class="section">
+      <h2>Class Product & Reflection</h2>
+      <div class="content-card">
+        <input type="file" id="upload-product">
+        <label for="reflection">Write your 300-350 word reflection:</label>
+        <textarea id="reflection" rows="6" placeholder="Write your reflection here..."></textarea>
+      </div>
+    </section>
+
+    <!-- Responsible Citizenship -->
+    <section id="responsible-citizenship" class="section">
+      <h2>Responsible Citizenship</h2>
+      <div class="flex-container">
+        <div>
+          <h3>Previous Assignment</h3>
+          <textarea placeholder="Insert your previous assignment..."></textarea>
+        </div>
+        <div>
+          <h3>Personal Definition</h3>
+          <textarea placeholder="Write your new personal definition..."></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Core Values -->
+    <section id="core-values" class="section">
+      <h2>Three Core Values</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Value</th>
+            <th>Civic Importance</th>
+            <th>Applied in Service</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" placeholder="Value Name"></td>
+            <td><input type="text" placeholder="Importance..."></td>
+            <td><input type="text" placeholder="Yes/No"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Two Personal Commitments -->
+    <section id="personal-commitments" class="section">
+      <h2>Two Personal Commitments</h2>
+      <div class="dual-table">
+        <div>
+          <h3>As a student</h3>
+          <textarea placeholder="Describe actions as a student..."></textarea>
+        </div>
+        <div>
+          <h3>As a future professional</h3>
+          <textarea placeholder="Describe actions as a professional..."></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Letter -->
+    <section id="video-letter" class="section">
+      <h2>Video Letter to Future Self</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed" title="Video Letter Placeholder"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Student Name. Proudly built for the PASEC course.</p>
+  </footer>
+</body>
+</html>
