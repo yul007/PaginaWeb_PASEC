@@ -156,6 +156,17 @@ main {
   gap: 1.25rem;
 }
 
+.tab-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.responsible-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
 .content-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -235,6 +246,28 @@ main {
 
 .reflection-text p {
   font-size: 1.03rem;
+}
+
+.value-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.value-item {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fffaf2;
+}
+
+.value-item h4 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.value-item p {
+  color: var(--muted);
 }
 
 .flex-container > div,
@@ -318,7 +351,8 @@ footer {
 @media (max-width: 900px) {
   .two-column-layout,
   .flex-container,
-  .dual-table {
+  .dual-table,
+  .responsible-grid {
     grid-template-columns: 1fr;
   }
 
