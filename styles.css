@@ -7,7 +7,7 @@
   --ink: #1d2230;
   --muted: #586175;
   --surface: #fcfbf7;
-  --card: #d7d7d7;
+  --card: #9e9b9b;
   --panel: #f7e4c1;
   --border: rgba(29, 34, 48, 0.12);
   --shadow: 0 14px 34px rgba(29, 34, 48, 0.08);
@@ -61,7 +61,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(214, 251, 249, 0.98);
+  background: rgba(214, 164, 105, 0.98);
   border-bottom: 1px solid var(--border);
 }
 
@@ -185,7 +185,7 @@ main {
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid var(--border);
-  height: 800px;
+  height: (min(70vh, 500px));
   background: #e9e4db;
 }
 
