@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Academic Portfolio for university course">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
   <title>Academic Portfolio</title>
@@ -16,20 +17,19 @@
     </div>
   </header>
 
-  <nav id="navbar">
+  <nav id="navbar" class="sticky">
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#class-product">Class Product & Reflection</a></li>
-      <li><a href="#responsible-citizenship">Responsible Citizenship</a></li>
-      <li><a href="#core-values">Three Core Values</a></li>
-      <li><a href="#personal-commitments">Two Personal Commitments</a></li>
-      <li><a href="#video-letter">Video Letter</a></li>
+      <li><button class="tab-link active" data-tab="home">Home</button></li>
+      <li><button class="tab-link" data-tab="class-product">Class Product & Reflection</button></li>
+      <li><button class="tab-link" data-tab="responsible-citizenship">Responsible Citizenship</button></li>
+      <li><button class="tab-link" data-tab="core-values">Three Core Values</button></li>
+      <li><button class="tab-link" data-tab="personal-commitments">Two Personal Commitments</button></li>
+      <li><button class="tab-link" data-tab="video-letter">Video Letter</button></li>
     </ul>
   </nav>
 
   <main>
-    <!-- Home Section -->
-    <section id="home" class="section">
+    <section id="home" class="tab-content active">
       <div class="hero">
         <img src="assets/images/banner.jpg" alt="Hero Banner">
       </div>
@@ -37,8 +37,7 @@
       <p>This portfolio represents my academic growth, service activities, and reflective learning through the PASEC course.</p>
     </section>
 
-    <!-- Class Product & Reflection -->
-    <section id="class-product" class="section">
+    <section id="class-product" class="tab-content">
       <h2>Class Product & Reflection</h2>
       <div class="content-card">
         <input type="file" id="upload-product">
@@ -47,8 +46,7 @@
       </div>
     </section>
 
-    <!-- Responsible Citizenship -->
-    <section id="responsible-citizenship" class="section">
+    <section id="responsible-citizenship" class="tab-content">
       <h2>Responsible Citizenship</h2>
       <div class="flex-container">
         <div>
@@ -62,8 +60,7 @@
       </div>
     </section>
 
-    <!-- Three Core Values -->
-    <section id="core-values" class="section">
+    <section id="core-values" class="tab-content">
       <h2>Three Core Values</h2>
       <table>
         <thead>
@@ -83,8 +80,7 @@
       </table>
     </section>
 
-    <!-- Two Personal Commitments -->
-    <section id="personal-commitments" class="section">
+    <section id="personal-commitments" class="tab-content">
       <h2>Two Personal Commitments</h2>
       <div class="dual-table">
         <div>
@@ -98,8 +94,7 @@
       </div>
     </section>
 
-    <!-- Video Letter -->
-    <section id="video-letter" class="section">
+    <section id="video-letter" class="tab-content">
       <h2>Video Letter to Future Self</h2>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed" title="Video Letter Placeholder"></iframe>
